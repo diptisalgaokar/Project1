@@ -1,0 +1,29 @@
+<div>Project: <span>{{title}}</span> </div>
+
+<h1 *ngFor="let i of firstName;index as j">Candidate Name[{{j+1}}]: <span ng-class="names">{{i}} - {{lastName[j]}}</span></h1>
+
+<div>
+    <app-my-comp></app-my-comp>
+    <mat-slider min="1" max="100" step="1" value="50" tickInterval="auto"></mat-slider>
+</div>
+
+<!-- My piece of code -->
+<br>
+
+<br>
+<hr>
+<div>
+<button
+type="button"
+[disabled]="canClick"
+(click)="showMsg()"
+[className]="checkVal ? 'btnSel' : ''"
+>Click here!</button>
+<br><br>
+<p
+[id]="'Hi'"
+[style.color]="fontColor">See the MAGIC!</p>
+</div>
+
+
+<!-- My piece of code ends here-->
